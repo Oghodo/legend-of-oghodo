@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Of Oghodo</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#00ffcc">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h1 class="logo">Legend Of Oghodo</h1>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#player">Player</a>
+        <a href="#stats">Stats</a>
+        <a href="#videos">Videos</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h2>Welcome to My Journey</h2>
+            <p>Football • Discipline • Greatness</p>
+            <button class="btn" onclick="showMessage()">Explore</button>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+
+        <div class="about-image">
+            <img src="images/profile picture.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p>
+                I am Oghodo, a passionate footballer and student dedicated to improving my skills,
+                discipline, and performance on and off the pitch.
+            </p>
+
+            <p>
+                My goal is to build a strong football career through hard work, consistency, and determination.
+            </p>
+
+            <p>
+                I am committed to a disciplined lifestyle with training, nutrition, and mindset development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ⚽ FIFA PLAYER CARD -->
+<section id="player">
+    <h2>FIFA Player Profile</h2>
+
+    <div class="fifa-card">
+
+        <div class="fifa-left">
+            <h1 class="rating">85</h1>
+            <p class="position">ST</p>
+
+            <img src="images/profile.jpg" alt="Player Card">
+        </div>
+
+        <div class="fifa-right">
+            <h3>Oghodo</h3>
+
+            <div class="stats-grid">
+                <div>PAC <span>88</span></div>
+                <div>SHO <span>84</span></div>
+                <div>PAS <span>78</span></div>
+                <div>DRI <span>86</span></div>
+                <div>DEF <span>60</span></div>
+                <div>PHY <span>86</span></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+    <h2>Football Stats</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h3 class="counter" data-target="35">0</h3>
+            <p>Goals</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="counter" data-target="20">0</h3>
+            <p>Assists</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="counter" data-target="49">0</h3>
+            <p>Matches</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="counter" data-target="32">0</h3>
+            <p>Top Speed</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+    <h2>Video Highlights</h2>
+
+    <div class="video-slider">
+
+        <button class="video-btn" onclick="prevVideo()">❮</button>
+
+        <div class="video-frame">
+            <iframe
+                id="videoFrame"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <button class="video-btn" onclick="nextVideo()">❯</button>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="achievements-container">
+
+        <div class="achievement-card">🏆 <h3>MVP Award</h3></div>
+        <div class="achievement-card">⚽ <h3>Top Scorer</h3></div>
+        <div class="achievement-card">🎯 <h3>Assist Leader</h3></div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Highlights</h2>
+
+    <div class="gallery-grid">
+        <img src="images/match1.jpg" alt="Match 1">
+        <img src="images/match2.jpg" alt="Match 2">
+        <img src="images/match3.jpg" alt="Match 3">
+    </div>
+</section>
+
+<!-- 📱 SOCIAL MEDIA -->
+<section id="social">
+    <h2>Connect With Me</h2>
+
+    <div class="social-container">
+
+        <a href="https://www.instagram.com/o.oghodo/" target="_blank" class="social-card">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100072251958131" target="_blank" class="social-card">
+            Facebook
+        </a>
+        <a href="https://github.com/Oghodo" target="_blank" class="social-card">
+            Github
+        </a>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form" onsubmit="return submitForm()">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button class="btn" type="submit">Send</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Legend Of Oghodo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
